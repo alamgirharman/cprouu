@@ -7,10 +7,16 @@
     // }
 
     // 7.2B ..................................
-    int add(double num1, double num2) {
-        double sum = num1 + num2;
-        return sum;
-    }
+    // int add(double num1, double num2) {
+    //     double sum = num1 + num2;
+    //     return sum;
+    // }
+
+    // 7.3 ..................................
+    // double add(double num1, double num2) {
+    //     double sum = num1 + num2;
+    //     return sum;
+    // }
 
 int main() {
 
@@ -32,11 +38,20 @@ int main() {
 
 
     // 7.2B ..................................
-    double a, b, c;
-    a = b = 2.5;
-    c = add(a, b);
-    printf("%lf\n", c);
+    // double a, b, c;
+    // a = b = 2.5;
+    // c = add(a, b);
+    // printf("%lf\n", c);
 
+    // 7.3 ..................................
+    // double a, b, c;
+    // a = b = 2.8;
+    // b = 2.7;
+    // c = add(a, b);
+    // printf("%lf\n", c);
+
+
+  
 
 
     return 0;

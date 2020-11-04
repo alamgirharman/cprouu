@@ -92,19 +92,19 @@ int main() {
         //unsolved problem .............................................
 
 
-            int ara[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};    
-            int i, j, temp;   
+            // int ara[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};    
+            // int i, j, temp;   
 
-            for(i = 0, j = 9; i < 10; i++, j--) {  
+            // for(i = 0, j = 9; i < 10; i++, j--) {  
 
-                temp = ara[j];  
+            //     temp = ara[j];  
  
-                ara[j] = ara[i];  
+            //     ara[j] = ara[i];  
 
-                ara[i] = temp;   
+            //     ara[i] = temp;   
 
-                printf("%d\n", ara[i]);
-            }  
+            //     printf("%d\n", ara[i]);
+            // }  
 
 
 
@@ -148,6 +148,20 @@ int main() {
             // for(i = 0; i <= 11; i++) {
             //     printf("Marks: %d Count: %d\n", i, marks_count[i]);
             // }
+
+
+    char ch = "D";
+    char result;
+    //scanf("%s", &ch);
+
+    if(ch >= 'A' && ch <= 'Z') {
+        result = 'a' + (ch - 'A');
+    } else if(ch >= 'a' && ch <= 'z') {
+        result = 'A' + (ch - 'a')
+    }
+
+
+    printf("%s\n", result);
 
             return 0;
 }
