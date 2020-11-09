@@ -1,22 +1,26 @@
 #include <stdio.h>
+char string_length(char str[]);
 
 int main() {
 
-    char country[] = {'B', 'a', 'n', 'g', 'l', 'a', 'd', 'e', 's', 'h', '\0'};
-
-    int i, length;
-
-    printf("%s\n", country);
-
-    length = 10;
-
-    for(i = 0; i < length; i++) {
-        if(country[i] >= 'a' && country[i] <= 'z') {
-            country[i] = 'A' + (country[i] - 'a');
-        }
+    
+    char country[100];
+    int length;
+    while(1 == scanf("%s", &country)) {
+        length = string_length(country);
+        printf("length: %d\n", length);
     }
 
-    printf("%s\n", country);
+
+    
 
     return 0;
 }
+
+char string_length(char str[]) {
+        int i, length = 0;
+        for(i = 0; str[i] != '\0'; i++) {
+            length++;
+        }
+        return length;
+    }
