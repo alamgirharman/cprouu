@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(void) {
-    long x;
-    x = 1287600L;
-
-    printf("%d\n", x);
+    printf("Enter an integer number: ");
+    int myInt;
+    scanf("%d",  &myInt);
+    printf("You entered %d\n", myInt);
     return 0;
 }
